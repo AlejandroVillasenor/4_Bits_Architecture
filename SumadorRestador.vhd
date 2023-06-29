@@ -1,5 +1,4 @@
---Sumador Restador de 4 bits
-
+-- 4 bits FULL Adder/Substractor
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;

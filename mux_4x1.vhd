@@ -1,4 +1,4 @@
---4x1 multiplexere
+--4x1 multiplexer
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
