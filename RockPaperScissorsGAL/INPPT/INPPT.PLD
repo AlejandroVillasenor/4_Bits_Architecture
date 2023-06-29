@@ -1,0 +1,31 @@
+Name     INPPT ;
+PartNo   00 ;
+Date     09/02/2023 ;
+Revision 01 ;
+Designer Engineer ;
+Company  University of Tulsa ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+PIN     2=A0                         ; /*                                 */ 
+PIN     3=A1                         ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN     14=A                         ; /*                                 */ 
+PIN     15=B                         ; /*                                 */ 
+PIN     16=C                         ; /*                                 */ 
+PIN     17=D                         ; /*                                 */ 
+PIN     18=E                         ; /*                                 */ 
+PIN     19=F                         ; /*                                 */ 
+PIN     20=G                         ; /*                                 */ 
+/* *************** EQUATIONS *********************/
+
+A=A1&!A0;
+B=A1;
+C=A1#A0;
+D=A1$A0;
+E=A1#A0;
+F=A1;
+G=!A1#A0;

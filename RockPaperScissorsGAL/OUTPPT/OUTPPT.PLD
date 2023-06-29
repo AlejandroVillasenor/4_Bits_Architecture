@@ -1,0 +1,33 @@
+Name     OUTPPT ;
+PartNo   00 ;
+Date     09/02/2023 ;
+Revision 01 ;
+Designer Engineer ;
+Company  University of Tulsa ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+PIN     2=SA                         ; /*                                 */ 
+PIN     3=SB                         ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN     14=A                         ; /*                                 */ 
+PIN     15=B                         ; /*                                 */ 
+PIN     16=C                         ; /*                                 */ 
+PIN     17=D                         ; /*                                 */ 
+PIN     18=E                        ; /*                                 */ 
+PIN     19=F                         ; /*                                 */ 
+
+/* *************** EQUATIONS *********************/
+A=SA;
+B=SA&!SB;
+C=SA$SB;
+D=SB;
+E=SA#SB;
+F=SA#SB;
+
+
+
+

@@ -1,0 +1,33 @@
+%SIGNAL
+PIN   4 =  A0 
+PIN   3 =  A1 
+PIN   6 =  B0 
+PIN   5 =  B1 
+PIN   2 =  J 
+PIN  14 =  SA 
+PIN  15 =  SB 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+SA =>
+    A0 & !A1 & B0 & J
+  # A0 & B0 & B1 & J
+  # !A0 & A1 & B0 & !B1 & J
+  # A1 & !B0 & B1 & J
+
+SB =>
+    A0 & B0 & !B1 & J
+  # A1 & B0 & B1 & J
+  # !A0 & A1 & B1 & J
+  # A0 & !A1 & !B0 & B1 & J
+
+SA.oe  =>
+    1 
+
+SB.oe  =>
+    1 
+
+%END

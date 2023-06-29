@@ -1,0 +1,26 @@
+Name     JuegoPPT ;
+PartNo   00 ;
+Date     09/02/2023 ;
+Revision 01 ;
+Designer Engineer ;
+Company  University of Tulsa ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+PIN     2=J                         ; /*                                 */ 
+PIN     3= A1                        ; /*                                 */ 
+PIN     4= A0                        ; /*                                 */ 
+PIN     5=B1                         ; /*                                 */ 
+PIN     6=B0                         ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN     14=SA                         ; /*                                 */ 
+PIN     15=SB                         ; /*                                 */ 
+/* *************** EQUATIONS *********************/
+SA=(J&!A1&A0&B0)#(J&A0&B1&B0)#(J&A1&!A0&!B1&B0)#(J&A1&B1&!B0);
+SB=(J&A0&!B1&B0)#(J&A1&B1&B0)#(J&A1&!A0&B1)#(J&!A1&A0&B1&!B0);
+
+
+
