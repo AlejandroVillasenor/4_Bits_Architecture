@@ -2,6 +2,7 @@
 This repository is a collection of VHDL programs that I developed for my Computer Architecture course. They illustrate the design and operation of various components of a 4-bit CPU and other related circuits. This repository aims to provide valuable examples and resources for anyone interested in learning about VHDL and CPU design.
 
 Teacher: Morales Ramirez Thelma Isabel
+
 Course: Arquitectura de Computadoras
 
 I appreciate your knowledge and guidance, teacher.
